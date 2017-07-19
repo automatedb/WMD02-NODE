@@ -4,8 +4,8 @@
   "description": "Petite description",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js production",
-    "start:dev": "node index.js development"
+    "start": "node index.js production 123.123.123.123",
+    "start:dev": "node index.js development 8080 localhost"
   },
   "keywords": [
     "mot",
@@ -13,5 +13,8 @@
     "other"
   ],
   "author": "Nom Prenom <email@domain.tld>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^1.0.9"
+  }
 }
