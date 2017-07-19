@@ -50,14 +50,14 @@ class Model {
     }
 }
 
-// class User {
-//     create() {
-//         return new Promise(resolve => resolve(new Model()))
-//     }
-// }
-//
-// const user = new User();
-//
+class User {
+    create() {
+        return new Promise(resolve => resolve(new Model()))
+    }
+}
+
+const user = new User();
+
 // user.create().then(
 //     result => {
 //         result.save('john').then(
