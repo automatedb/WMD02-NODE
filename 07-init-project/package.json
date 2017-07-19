@@ -4,8 +4,10 @@
   "description": "Petite description",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js production 123.123.123.123",
-    "start:dev": "node index.js development 8080 localhost"
+    "start": "node index.js --env production --ip 123.123.123.123",
+    "start:dev": "node index.js --env development --port 8080 --ip localhost",
+    "start:process:prod": "node index.js production 123.123.123.123",
+    "start:process:dev": "node index.js development 8080 localhost"
   },
   "keywords": [
     "mot",
